@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Fishes</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/vue.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+<div id="app">
+  <h2 v-if="seen">{{ message }} <img src="images/logo.svg" width="40px"></h2>
+  <input v-model="name" v-if="seen" placeholder="Name">
+  <button class="button" v-on:click="hiden" v-if="seen">Accept</button>
+  <div class="gameInfo">
+    <p v-if="seen === false"> Let's play, {{ name }}</p>
+    <p v-if="seen === false"> Score: {{ score }}</p>
+    <p v-if="seen === false"> Time: {{ time }}</p>
+  </div>
+  <button v-if="buttonSeen" onclick="fish1.style.left='0'; fish2.style.left='0'; fish3.style.left='0'; fish4.style.left='0';fish5.style.left='0';" v-on:click="start">Start Game</button>
+  <div id="fish" v-if="fishSeen" >
+    <div id="fish1" v-on:click="fish1" v-if="seenFish1" ><img src="images/fish.svg" width="120px"></div>
+    <div id="fish2" v-on:click="fish2" v-if="seenFish2"><img src="images/fish2.svg" width="150px"></div>
+    <div id="fish3" v-on:click="fish3" v-if="seenFish3"><img src="images/fish3.svg" width="150px"></div>
+    <div id="fish4" v-on:click="fish4" v-if="seenFish4"><img src="images/fish4.svg" width="100px"></div>
+    <div id="fish5" v-on:click="fish5" v-if="seenFish5" ><img src="images/fish5.svg" width="100px"></div>
+    <img src="images/sea.jpg" width="100%">
+  </div>
+</div>
+</body>
+</html>

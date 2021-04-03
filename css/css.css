@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+body{
+	font-family: 'Kiwi Maru', serif;
+	text-align: center;
+}
+h2{
+	font-size: 40px;
+}
+input{
+	border: none;
+	background-color: #d6d4d4;
+	text-align: center;
+	width: 300px;
+	height: 50px;
+}
+.button{
+	border: none;
+	background-color: #3cc765;
+	width: 70px;
+	height: 50px;
+}
+button{
+	border-radius: 3px;
+	border: none;
+	background-color: #3cc765;
+	width: 120px;
+	height: 50px;
+}
+.gameInfo{
+	margin-left: 43.5%;
+	width: 15em;
+	background-color: #6fd8e8;
+	border-radius: 5px;
+}
+#fish1{
+	top: 200px;
+	position: absolute;
+  	cursor: pointer;
+	left: 0;
+	animation: move 15s infinite ease-in-out;
+}
+#fish2{
+	top: 350px;
+	position: absolute;
+  	cursor: pointer;
+	left: 0;
+	animation: move 15s infinite ease-in-out;
+}
+#fish3{
+	top: 500px;
+	position: absolute;
+  	cursor: pointer;
+	left: 0;
+	animation: move 15s infinite ease-in-out;
+}
+#fish4{
+	top: 650px;
+	position: absolute;
+  	cursor: pointer;
+	left: 0;
+	animation: move 15s infinite ease-in-out;
+}
+#fish5{
+	top: 800px;
+	position: absolute;
+  	cursor: pointer;
+	left: 0;
+	animation: move 15s infinite ease-in-out;
+}
+@keyframes move {
+  100% {
+    right: 100%;
+    left: 100%;
+    animation-timing-function: ease-in-out;
+    }
+}
